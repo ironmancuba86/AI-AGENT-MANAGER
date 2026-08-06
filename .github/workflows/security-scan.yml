@@ -1,0 +1,15 @@
+name: security-scan
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check security-sensitive files exist
+        run: |
+          test -f SECURITY.md
+          test -f .github/CODEOWNERS
