@@ -1,0 +1,9 @@
+# Protect critical files and folders
+/README.md @owners
+/SECURITY.md @owners
+/CONTRIBUTING.md @owners
+/AGENTS.md @owners
+/.github/ @owners
+/docs/product/ @owners
+/prompts/ @owners
+/skills/ @owners
